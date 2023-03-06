@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
-      <Button layoutX="323.0" layoutY="227.0" onAction="#changeText" mnemonicParsing="false" text="Button" />
-      <Text fx:id="textForChanging" layoutX="272.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standart text!" />
+      <Button fx:id="buttonStartLearn" layoutX="295.0" layoutY="227.0" mnemonicParsing="false" onAction="#onButtonLearnClicked" text="Start of training" />
+      <ProgressBar fx:id="progressBarLearn" layoutX="249.0" layoutY="233.0" prefWidth="200.0" progress="0.0" visible="false"/>
+      <Label fx:id="labelLearningProgress" layoutX="334.0" layoutY="182.0" text="Label" visible="false"/>
    </children>
 </AnchorPane>
